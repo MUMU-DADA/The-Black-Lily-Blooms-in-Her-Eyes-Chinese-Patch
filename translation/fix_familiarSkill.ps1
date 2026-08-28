@@ -1,0 +1,15 @@
+$p='C:\Users\pc\Desktop\TheBlackLilyBloomsinHerEyes\chinese-patch\source\data\scenario\battle\familiarSkill.ks'; $l=[System.Collections.Generic.List[string]](Get-Content $p -Encoding UTF8)
+$l[74]='        [emb exp="sf.familiarStatusList[f.battleDataDic[mp.target][''arcanaCardInfo''][''arcanaNo'']][''name'']"]的属性等级不会降低！[auto_message_wait]'
+$l[85]='        [emb exp="sf.familiarStatusList[f.battleDataDic[mp.target][''arcanaCardInfo''][''arcanaNo'']][''name'']"]的[emb exp="sf.statusLvNameDic[mp.type]"]已经无法再提升！[auto_message_wait]'
+$l[96]='        [emb exp="sf.familiarStatusList[f.battleDataDic[mp.target][''arcanaCardInfo''][''arcanaNo'']][''name'']"]的[emb exp="sf.statusLvNameDic[mp.type]"]已经无法再降低！[auto_message_wait]'
+$l[108]='        [emb exp="sf.familiarStatusList[f.battleDataDic[mp.target][''arcanaCardInfo''][''arcanaNo'']][''name'']"]的[emb exp="sf.statusLvNameDic[mp.type]"]提升了！[auto_message_wait]'
+$l[120]='        [emb exp="sf.familiarStatusList[f.battleDataDic[mp.target][''arcanaCardInfo''][''arcanaNo'']][''name'']"]的[emb exp="sf.statusLvNameDic[mp.type]"]降低了！[auto_message_wait]'
+$l[152]='        [emb exp="f.battleDataDic[f.areaPlayer][''name'']"]展开了[emb exp="sf.areaStatusList[sf.areaStatusVs[String(mp.no)]][''areaName'']"]！[auto_message_wait]'
+$l[163]='        『时不知领域』无法被覆盖！[auto_message_wait]'
+$l[321]='                [emb exp="sf.familiarStatusList[f.battleDataDic[f.vsSkillFamiliar][''arcanaCardInfo''][''arcanaNo'']][''name'']"]凭借拒绝之力反射了技能！[auto_message_wait]'
+$l[335]='                [emb exp="sf.familiarStatusList[f.battleDataDic[f.vsSkillFamiliar][''arcanaCardInfo''][''arcanaNo'']][''name'']"]凭借拒绝之力使技能无效！[auto_message_wait]'
+$l[363]='                [emb exp="sf.familiarStatusList[f.battleDataDic[mp.target][''arcanaCardInfo''][''arcanaNo'']][''name'']"]不接受支援效果！[auto_message_wait]'
+$l[401]='        [emb exp="sf.familiarStatusList[f.battleDataDic[f.battleDefenseSide][''arcanaCardInfo''][''arcanaNo'']][''name'']"]凭借爱的力量撑过了攻击！[auto_message_wait]'
+$l[455]='            [emb exp="sf.familiarStatusList[f.battleDataDic[f.targetJudge][''arcanaCardInfo''][''arcanaNo'']][''name'']"]将接受审判！[auto_message_wait]'
+$l[468]='            [emb exp="sf.familiarStatusList[f.battleDataDic[f.targetJudge][''arcanaCardInfo''][''arcanaNo'']][''name'']"]将在 [emb exp="f.battleDataDic[f.targetJudge][''effectDic''][''support20'']"] 回合后接受审判！[auto_message_wait]'
+$l[496]=$l[455]; $l[509]=$l[468]; [IO.File]::WriteAllLines($p,$l,[Text.UTF8Encoding]::new($false))
